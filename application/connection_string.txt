@@ -1,0 +1,1 @@
+mongodb://test-user:12345@mongodb0.example.com:27017/?authSource=admin
