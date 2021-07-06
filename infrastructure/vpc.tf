@@ -13,6 +13,10 @@ resource "aws_internet_gateway" "internet_gateway" {
   tags = {
     Name = "${var.vpc_name} Internet Gateway"
   }
+
+  depends_on = [
+    aws_vpc.main
+  ]
 }
 
 data "aws_availability_zones" "available" {
